@@ -6,52 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>HAPPY BIRTHDAY JUDY</title>
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-    
-  </head>
-  <body style="background-color:#E6E6FA">
-    <h1>HAPPY BIRTHDAY JUDY</h1>
-    
-    <button type="button" onclick="alert()"> THIS IS A BUTTON THAT WILL ALERT YOU</button> 
-    <button type="button" onclick="randomize()"> THIS IS A BUTTON THAT DOES RANDOM THINGS</button>
-    <!-- onclick="myFunction()" --> 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    <script>
-      function randomize(){
-        var randomnumber = Math.floor(Math.random() * 3); // random number between 0 and 3
-        
-        if (randomnumber == 0) alert();
+<script>
+      function randomizethis(){
+        var randomnumber = Math.floor(Math.random() * 3) // random number between 0 and 3
+
+        if (randomnumber == 0) alertmessage()
         else if (randomnumber == 1) changebackground();
         else if (randomnumber == 2) confetti();
         else pictureappear();
       }
-      
-      function alert() {
+
+     function alertmessage() {
         alert("this is an alert wow");
       }
-      
+
       function changebackground() {
         alert("this should really change the background");
-      } 
-      
+      }
+
       function confetti(){
         alert("confetti function");
       }
-      
+
       function pictureappear(){
-        alert("picture appear function");  
+        alert("picture appear function");
       }
-      
+
     </script>
-    
-    
+
+
+  </head>
+  <body style="background-color:#E6E6FA">
+    <h1>HAPPY BIRTHDAY JUDY</h1>
+
+    <button type="button" onclick="alertmessage()">ALERT</button>
+   <button type="button" onclick="randomizethis()">RANDOM</button>
+    <!-- onclick="myFunction()" -->
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+
   </body>
 </html>
