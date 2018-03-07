@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--Judy's Birthday 2k18: the Memory Jar
+  This will be a virtual "memory jar" that will host quotes, pictures, stories, art, things Judy loves, etc.
+  that Judy can open and come back to.
+  Backend Experts: Roo and Jazzy
+  Front End/Media Expert: Rae
+  Feel free to add your digital signature above-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +19,10 @@
     <![endif]-->
 
 <script>
+      /*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
+      jar units (memories, pictures, etc) that will then be displayed on the page*/
+  
+      //randomizethis - picks a random number in the range of jar units, calls the function of each jar unit
       function randomizethis(){
         var randomnumber = Math.floor(Math.random() * 3) // random number between 0 and 3
 
@@ -22,6 +32,7 @@
         else pictureappear();
       }
 
+     //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
      function alertmessage() {
         alert("this is an alert wow");
       }
@@ -45,8 +56,9 @@
   <body style="background-color:#E6E6FA">
     <h1>HAPPY BIRTHDAY JUDY</h1>
 
-    <button type="button" onclick="alertmessage()">ALERT</button>
-   <button type="button" onclick="randomizethis()">RANDOM</button>
+    <!--JAR; need to make the random button into an image
+    <img src="/Assets/standinjar.jpg" alt="RANDOM" style="width:500px;">  -->
+    <button type="button" onclick="randomizethis()">RANDOM</button>
     <!-- onclick="myFunction()" -->
 
 
