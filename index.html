@@ -12,7 +12,7 @@
   -Make & upload individual jar units to Assets folder
   -style everything (positions, fonts, colours, aesthetic goodness)
   -link each jar unit to a new function + Add call to random function 
-  -make judy cry
+  -make judy cry tears of joy
 -->
   <head>
     <meta charset="utf-8">
@@ -42,7 +42,9 @@
 
      //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
      function alertmessage() {
-        alert("this is an alert wow");
+       var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty"]; //array of messages
+       var random2 = Math.floor(Math.random() * 1)//random number for picking from array
+       alert(messages[random2]);
       }
 
       function changebackground() {
