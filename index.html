@@ -42,7 +42,7 @@
 
      //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
      function alertmessage() {
-       var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty"]; //array of messages
+       var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty", "Aha, heyyyy, Judy!!! Love you so much and I hope you have an AMAZING birthday!!!! I hope you enjoy that horrible limerick!!\n It’s all true, even though it’s worded horribly. Thanks so much for all the years of friendship and putting up with my pessimism. \nWe’ve had lots of fun times together, from DECA to crew things and a bunch of stuff. You’re a wonderful person, and I can’t wait to see all the incredible things you’ll accomplish. \nLOVE YOU SO MUCH, DUDE!!! <3 <3 - Sri"]; //array of messages
        var random2 = Math.floor(Math.random() * 1)//random number for picking from array
        alert(messages[random2]);
       }
@@ -56,7 +56,14 @@
       }
 
       function pictureappear(){
-        alert("picture appear function");
+        var imgArray = new Array ();//array with each image element and its source intialized
+        imgArray[0]=new Image(); 
+        imgArray[0].src="Assets/1.jpg";
+        imgArray[1]=new Image();
+        imgArray[1].src="Assets/2.jpg";
+        imgArray[2]=new Image();
+        var random3 = Math.floor(Math.random() * 2)//random number for picking from array
+        
       }
 
     </script>
