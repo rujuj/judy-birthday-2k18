@@ -29,19 +29,18 @@
 	<script>
 	      /*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
 	      jar units (memories, pictures, etc) that will then be displayed on the page*/
-	  	document.getElementById("judypic").style.display = "none";
-		document.getElementById("judypic").style.visibility = "hidden"; //judypic starts hidden
+
 		
 	      //randomizethis - picks a random number in the range of jar units, calls the function of each jar unit
 	      function randomizethis(){
 	        changebackground();
 		pictureappear();
 				      
-		/*var randomnumber = Math.floor(Math.random() * 1); // random number between 0 and 3
+		var randomnumber = Math.floor(Math.random() * 1); // random number between 0 and 3
 		      
 	       	if (randomnumber == 0) alertmessage();
-	       	else if (randomnumber == 2) confetti();
-	       	else pictureappear();*/
+	       	/*else if (randomnumber == 2) confetti();*/
+	       	else pictureappear();
 	      }
 		
 		
@@ -76,19 +75,8 @@
 	      	var imgsrc = "Assets/" + random3 + ".jpg";
 		      
 		      
-		document.getElementById("judypic").style.display = inline;
-		document.getElementById("judypic").src = imgsrc;
-		 
-		
-				      
-	        /*var imgArray = new Array ();//array with each image element and its source intialized
-	        imgArray[0]=new Image(); 
-	        imgArray[0].src="Assets/1.jpg";
-	        imgArray[1]=new Image();
-	        imgArray[1].src="Assets/2.jpg";
-	        imgArray[2]=new Image();
-	        var random3 = Math.floor(Math.random() * 2)//random number for picking from array*/
-	        
+		document.getElementById("judypic").style.display = block;
+		document.getElementById("judypic").src = imgsrc;        
 	      }
 		
 		
