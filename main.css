@@ -5,5 +5,12 @@ body {
 }
 
 .wholething {
-text-align: center;
+    text-align: center;
+    max-height: inherit;
+    
+}
+
+#judypic {
+    max-height: 500px;
+    max-width: 500px;
 }
