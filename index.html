@@ -1,101 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!--Judy's Birthday 2k18: the Memory Jar
-  This will be a virtual "memory jar" that will host quotes, pictures, stories, art, things Judy loves, etc.
-  that Judy can open and come back to.
-  Backend Experts: Roo and Jazzy
-  Front End/Media Expert: Rae
-  Feel free to add your digital signature above
+	<html lang="en">
+	  <!--Judy's Birthday 2k18: the Memory Jar
+	  This will be a virtual "memory jar" that will host quotes, pictures, stories, art, things Judy loves, etc.
+	  that Judy can open and come back to.
+	  Backend Experts: Roo and Jazzy
+	  Front End/Media Expert: Rae
+	  Feel free to add your digital signature above
+	
+	  TO DO LIST:
+	  -Make Jar Image
+	  -Make & upload individual jar units to Assets folder
+	  -style everything (positions, fonts, colours, aesthetic goodness)
+	  -link each jar unit to a new function + Add call to random function 
+	  -make judy cry tears of joy
+	-->
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <title>HAPPY BIRTHDAY JUDY</title>
+	    <link href="css/main.css" rel="stylesheet">
+	    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	
+	<script>
+	      /*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
+	      jar units (memories, pictures, etc) that will then be displayed on the page*/
+	  
+	      //randomizethis - picks a random number in the range of jar units, calls the function of each jar unit
+	      function randomizethis(){
+	        var randomnumber = Math.floor(Math.random() * 3) // random number between 0 and 3
+	       
+	       if (randomnumber == 0) alertmessage()
+	       else if (randomnumber == 1) changebackground();
+	       else if (randomnumber == 2) confetti();
+	       else pictureappear();
+	      }
+	
+	     //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
+	     function alertmessage() {
+	       var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty",
+	       "Aha, heyyyy, Judy!!! Love you so much and I hope you have an AMAZING birthday!!!! I hope you enjoy that horrible limerick!!\nIt’s all true, even though it’s worded horribly. Thanks so much for all the years of friendship and putting up with my pessimism. \nWe’ve had lots of fun times together, from DECA to crew things and a bunch of stuff. You’re a wonderful person, and I can’t wait to see all the incredible things you’ll accomplish. \nLOVE YOU SO MUCH, DUDE!!! <3 <3 - Sri",
+	       "Juft! You're absolutely amazing and I miss you so much! I hope your birthday was fantastic!\nYou deserve the best! -Jazzy",
+	        "Favourite Crewling\nGreatest engineer of all\nOur dearest Judy", "There once was a girl named Judy,\nWho never shirked her duty, \nA student without peer, \nThe genius engineer,\nDedicated? Talented? Absolutely!"];//array of messages
+	       var random2 = Math.floor(Math.random() * 5)//random number for picking from array
+	       alert(messages[random2]);
+	      }
+	
+	      function changebackground() {
+	        var x=Math.floor(Math.random()*(200-100+1)+100);//random R value
+	        var y=Math.floor(Math.random()*(200-100+1)+100);//random G value
+	        var z=Math.floor(Math.random()*(200-100+1)+100);//random B value
+	        var bgColor="rgb(" +x+ "," +y+ "," +z+ ")";
+	        console.log(bgColor);
+	        document.body.style.background=bgColor;
+	      }
+	
+	      function confetti(){
+	      
+	      }
+	
+	      function pictureappear(){
+	        var imgArray = new Array ();//array with each image element and its source intialized
+	        imgArray[0]=new Image(); 
+	        imgArray[0].src="Assets/1.jpg";
+	        imgArray[1]=new Image();
+	        imgArray[1].src="Assets/2.jpg";
+	        imgArray[2]=new Image();
+	        var random3 = Math.floor(Math.random() * 2)//random number for picking from array
+	        
+	      }
+	
+	    </script>
+	
+	
+	  </head>
+	  <body style="background-color:#E6E6FA">
+	    <h1>HAPPY BIRTHDAY JUDY</h1>
+	
+	    <!--JAR; need to make the random button into an image
+	    <button type="button" onclick="randomizethis()">RANDOM</button>-->
+	    <img onclick="randomizethis()" src="Assets/standinjar.jpg" alt="RANDOM"> 
+	    <!-- onclick="myFunction()" -->
+	
+	
+	    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	    <!-- <script src="js/bootstrap.min.js"></script> -->
+	
+	
+	  </body>
+	</html>
 
-  TO DO LIST:
-  -Make Jar Image
-  -Make & upload individual jar units to Assets folder
-  -style everything (positions, fonts, colours, aesthetic goodness)
-  -link each jar unit to a new function + Add call to random function 
-  -make judy cry tears of joy
--->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>HAPPY BIRTHDAY JUDY</title>
-    <link href="css/main.css" rel="stylesheet">
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-<script>
-      /*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
-      jar units (memories, pictures, etc) that will then be displayed on the page*/
-  
-      //randomizethis - picks a random number in the range of jar units, calls the function of each jar unit
-      function randomizethis(){
-        changebackground();   
-        alertmessage();
-        
-        /*var randomnumber = Math.floor(Math.random() * 3) // random number between 0 and 3
-       
-        if (randomnumber == 0) alertmessage()
-        else if (randomnumber == 1) changebackground();
-        else if (randomnumber == 2) confetti();
-        else pictureappear();*/
-       
-       
-      }
-
-     //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
-     function alertmessage() {
-       var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty",
-       "Aha, heyyyy, Judy!!! Love you so much and I hope you have an AMAZING birthday!!!! I hope you enjoy that horrible limerick!!\nIt’s all true, even though it’s worded horribly. Thanks so much for all the years of friendship and putting up with my pessimism. \nWe’ve had lots of fun times together, from DECA to crew things and a bunch of stuff. You’re a wonderful person, and I can’t wait to see all the incredible things you’ll accomplish. \nLOVE YOU SO MUCH, DUDE!!! <3 <3 - Sri",
-       "Juft! You're absolutely amazing and I miss you so much! I hope your birthday was fantastic!\nYou deserve the best! -Jazzy",
-      "Favourite Crewling\nGreatest engineer of all\nOur dearest Judy", "There once was a girl named Judy,\nWho never shirked her duty, \nA student without peer, \nThe genius engineer,\nDedicated? Talented? Absolutely!",
-      "Happy Birthday Judy!! Have a fabulous day and thank you for all these years of fun memories and laughter!\nYou're such a charismatic, sweet, wise and compassionate person and I'm so lucky to have you in my life! Spending time with you always puts a smile on my face and I miss seeing you!\n I'm so happy and proud to call you my dear friend and I love seeing you grow as both an engineer and an artist <3\nOther than bumping into each other at UofT, we better hang out properly sometime soon! Love you to the moon and back <3 - Nishi"];//array of messages
-       var random2 = Math.floor(Math.random() * (messages.length() - 1))//random number for picking from array
-       alert(messages[random2]);
-      }
-
-      function changebackground() {
-        var x=Math.floor(Math.random()*256);//random R value
-        var y=Math.floor(Math.random()*256);//random G value
-        var z=Math.floor(Math.random()*256);//random B value
-        var bgColor="rgb(" +x+ "," +y+ "," +z+ ")";
-        console.log(bgColor);
-        document.body.style.background=bgColor;
-      }
-
-      function confetti(){
-      
-      }
-
-      function pictureappear(){
-        var imgArray = new Array ();//array with each image element and its source intialized
-        imgArray[0]=new Image(); 
-        imgArray[0].src="Assets/1.jpg";
-        imgArray[1]=new Image();
-        imgArray[1].src="Assets/2.jpg";
-        imgArray[2]=new Image();
-        var random3 = Math.floor(Math.random() * 2)//random number for picking from array
-        //left on figuring out how to hide and append images randomly selected from array
-      }
-
-    </script>
-
-
-  </head>
-  <body style="background-color:#E6E6FA">
-    <h1>HAPPY BIRTHDAY JUDY</h1>
-
-    <!--JAR; need to make the random button into an image
-    <button type="button" onclick="randomizethis()">RANDOM</button>-->
-    <img onclick="randomizethis()" src="Assets/standinjar.jpg" alt="RANDOM"> 
-    <!-- onclick="myFunction()" -->
-
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-
-
-  </body>
-</html>
