@@ -45,15 +45,15 @@
        var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty",
        "Aha, heyyyy, Judy!!! Love you so much and I hope you have an AMAZING birthday!!!! I hope you enjoy that horrible limerick!!\nIt’s all true, even though it’s worded horribly. Thanks so much for all the years of friendship and putting up with my pessimism. \nWe’ve had lots of fun times together, from DECA to crew things and a bunch of stuff. You’re a wonderful person, and I can’t wait to see all the incredible things you’ll accomplish. \nLOVE YOU SO MUCH, DUDE!!! <3 <3 - Sri",
        "Juft! You're absolutely amazing and I miss you so much! I hope your birthday was fantastic!\nYou deserve the best! -Jazzy",
-        "Favourite Crewling\nGreatest engineer of all\nOur dearest Judy", "There once was a girl named Judy,\nWho never shirked her duty,]; \nA student without peer, \nThe genius engineer,\nDedicated? Talented? Absolutely!"];//array of messages
+        "Favourite Crewling\nGreatest engineer of all\nOur dearest Judy", "There once was a girl named Judy,\nWho never shirked her duty, \nA student without peer, \nThe genius engineer,\nDedicated? Talented? Absolutely!"];//array of messages
        var random2 = Math.floor(Math.random() * 5)//random number for picking from array
        alert(messages[random2]);
       }
 
       function changebackground() {
-        var x=Math.floor(Math.random()*256);
-        var y=Math.floor(Math.random()*256);
-        var z=Math.floor(Math.random()*256);
+        var x=Math.floor(Math.random()*256);//random R value
+        var y=Math.floor(Math.random()*256);//random G value
+        var z=Math.floor(Math.random()*256);//random B value
         var bgColor="rgb(" +x+ "," +y+ "," +z+ ")";
         console.log(bgColor);
         document.body.style.background=bgColor;
