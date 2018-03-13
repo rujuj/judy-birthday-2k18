@@ -24,7 +24,9 @@
 	    [endif]-->
 	
 	<script>
-	      /*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
+	     var debug = true; // for debugging purposes
+		
+		/*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
 	      jar units (memories, pictures, etc) that will then be displayed on the page*/
 		document.getElementById("judypic").style.display = none;
 		
@@ -42,6 +44,9 @@
 			alertmessage();
 			//document.getElementById("judypic").style.display = none;}
 	      }
+		      if (debug) {
+			      alert(randomnumber); // just to see what numbers are being generated for debugging purposes
+		      }
 		
 	      }	
 	
