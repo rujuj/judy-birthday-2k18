@@ -89,11 +89,12 @@
 	      	var imgsrc = "Assets/" + random3 + ".jpg";
 		      
 		document.getElementById("judypic").src = imgsrc; 
-		      if (document.getElementByID("judypic").height > "500 px") {
+		      // setting the dimensions of the second image
+		      /*if (document.getElementByID("judypic").height() > "500 px") {
 			      document.getElementByID("judypic").height = "500 px";
 		      } else {
 			      document.getElementByID("judypic").width = "500 px";
-		      }
+		      }*/
 	      }
 		
 		
@@ -106,7 +107,7 @@
 	    <!--<h1>HAPPY BIRTHDAY JUDY</h1>-->
 	<div class="wholething">
 		<img onclick="randomizethis()" src="Assets/judyjar.png" width="500 px" alt="RANDOM">
-		<img id="judypic" src="Assets/1.jpg"   style="display: none">
+		<img id="judypic" src="Assets/1.jpg"   style="display: none" width="500 px">
 		  </div>
 	    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 	    <!-- <script src="js/bootstrap.min.js"></script> style="background-color:#E6E6FA"-->
