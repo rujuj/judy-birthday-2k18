@@ -40,6 +40,8 @@
 	       	/*else if (randomnumber == 2) confetti();*/
 	       	else pictureappear();
 	      }
+		
+		
 	
 	     //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
 	     function alertmessage() {
@@ -64,11 +66,11 @@
 	      
 	      }
 	
+
+		
 	      function pictureappear(){
 		var random3 = Math.floor(Math.random() * 23); //chooses a random picture (in main html body, a new div will change on click of jar by calling randomizethis)
-		var imgsrc = "Assets/" + random3 + ".jpg";
-	
-	      
+	      	var imgsrc = "Assets/" + random3 + ".jpg";
 	        /*var imgArray = new Array ();//array with each image element and its source intialized
 	        imgArray[0]=new Image(); 
 	        imgArray[0].src="Assets/1.jpg";
@@ -78,6 +80,8 @@
 	        var random3 = Math.floor(Math.random() * 2)//random number for picking from array*/
 	        
 	      }
+		
+		
 	
 	    </script>
 	
@@ -88,7 +92,8 @@
 	
 	    <!--JAR; need to make the random button into an image
 	    <button type="button" onclick="randomizethis()">RANDOM</button>-->
-	    <img onclick="randomizethis()" src="Assets/standinjar.jpg" alt="RANDOM"> 
+		<img onclick="randomizethis()" src="Assets/standinjar.jpg" alt="RANDOM">
+		<img id="judypic" src="Assets/1.jpg">
 	    <!-- onclick="myFunction()" -->
 	
 	
