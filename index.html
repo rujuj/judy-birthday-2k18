@@ -37,9 +37,13 @@
 						      
 		var randomnumber = Math.floor(Math.random() * 2); // random number between 0 and 3
 		      
-	       	if (randomnumber == 0) alertmessage();
-	       	//else if (randomnumber == 2) confetti();
-	       	else pictureappear();
+	       	if (randomnumber == 0) {
+			pictureappear();
+			document.getElementById("judypic").style.display = "";
+		}
+	       	else {
+			alertmessage();
+			document.getElementById("judypic").style.display = none;}
 	      }
 		
 		
