@@ -29,8 +29,8 @@
 	<script>
 	      /*site will consist of a main image (JAR) that, when clicked, randomly prompts one in a series of
 	      jar units (memories, pictures, etc) that will then be displayed on the page*/
-	  
-	document.getElementById("judypic").style.visibility = "hidden"; //judypic starts hidden
+	  	document.getElementById("judypic").style.display = "none";
+		document.getElementById("judypic").style.visibility = "hidden"; //judypic starts hidden
 		
 	      //randomizethis - picks a random number in the range of jar units, calls the function of each jar unit
 	      function randomizethis(){
@@ -103,7 +103,7 @@
 	    <!--JAR; need to make the random button into an image
 	    <button type="button" onclick="randomizethis()">RANDOM</button>-->
 		<img onclick="randomizethis()" src="Assets/standinjar.jpg" alt="RANDOM">
-		<img id="judypic" src="Assets/1.jpg" visibility="hidden" width="100 px">
+		<img id="judypic" src="Assets/1.jpg"  width="500 px">
 	    <!-- onclick="myFunction()" -->
 	
 	
