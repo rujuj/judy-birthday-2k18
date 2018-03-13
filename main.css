@@ -6,11 +6,13 @@ body {
 
 .wholething {
     text-align: center;
-    max-height: inherit;
+    width:1000px;
+        margin-left:auto;
+        margin-right:auto;
     
 }
 
 #judypic {
-    max-height: 500px;
+    height: 500px;
     max-width: 500px;
 }
