@@ -37,9 +37,7 @@
 						      
 		var randomnumber = Math.floor(Math.random() * 2); // random number between 0 and 3
 		      
-	       	if (randomnumber == 0) {
-			document.getElementById("judypic").style.display = none;
-			alertmessage();}
+	       	if (randomnumber == 0) alertmessage();
 	       	//else if (randomnumber == 2) confetti();
 	       	else pictureappear();
 	      }
@@ -48,6 +46,7 @@
 	
 	     //ALL JAR UNITS WILL BE DOWN HERE - each function represents what happens when jarunit function is called
 	     function alertmessage() {
+		document.getElementById("judypic").style.display = none;
 		var messages = ["Dearest, loveliest Judy, \nSo impressively smart, \nWith a wonderful heart,\nI just can’t get over your beauty",
 	       "Aha, heyyyy, Judy!!! Love you so much and I hope you have an AMAZING birthday!!!! I hope you enjoy that horrible limerick!!\nIt’s all true, even though it’s worded horribly. Thanks so much for all the years of friendship and putting up with my pessimism. \nWe’ve had lots of fun times together, from DECA to crew things and a bunch of stuff. You’re a wonderful person, and I can’t wait to see all the incredible things you’ll accomplish. \nLOVE YOU SO MUCH, DUDE!!! <3 <3 - Sri",
 	       "Juft! You're absolutely amazing and I miss you so much! I hope your birthday was fantastic!\nYou deserve the best! -Jazzy",
