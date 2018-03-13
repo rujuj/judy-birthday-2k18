@@ -80,8 +80,11 @@
 	      function pictureappear(){
 		document.getElementById("judypic").style.display = "";
 		var random3 = 0;
+		// number of pictures:
+		var picnum = 25;
+		      
 		while (random3 == 0) {
-		      random3 = Math.floor(Math.random() * 23); //chooses a random picture 
+		      random3 = Math.floor(Math.random() * (picnum + 1)); //chooses a random picture 
 			//(in main html body, a new div will change on click of jar by calling randomizethis)
 		} // we don't want the number 0 because currently we have no /0.jpg
 	      	var imgsrc = "Assets/" + random3 + ".jpg";
