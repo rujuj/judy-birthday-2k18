@@ -71,11 +71,12 @@
 
 		
 	      function pictureappear(){
+		document.getElementById("judypic").style.display = "";
 		var random3 = Math.floor(Math.random() * 23); //chooses a random picture (in main html body, a new div will change on click of jar by calling randomizethis)
 	      	var imgsrc = "Assets/" + random3 + ".jpg";
 		      
 		      
-		document.getElementById("judypic").style.display = "";
+		
 		document.getElementById("judypic").src = imgsrc;        
 	      }
 		
