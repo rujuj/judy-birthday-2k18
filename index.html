@@ -82,7 +82,12 @@
 		} // we don't want the number 0 because currently we have no /0.jpg
 	      	var imgsrc = "Assets/" + random3 + ".jpg";
 		      
-		document.getElementById("judypic").src = imgsrc;        
+		document.getElementById("judypic").src = imgsrc; 
+		      if (document.getElementByID("judypic").height > "500 px") {
+			      document.getElementByID("judypic").height = "500 px";
+		      } else {
+			      document.getElementByID("judypic").width = "500 px";
+		      }
 	      }
 		
 		
